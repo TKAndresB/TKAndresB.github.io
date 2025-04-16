@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raíces y Letras: Explora la rica tradición oral colombiana a través de sus mitos y leyendas ancestrales">
+  <meta name="keywords" content="mitos colombianos, leyendas colombianas, tradición oral, cultura colombiana">
+  <title>Raíces y Letras | Mitos y Leyendas Colombianas</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Precargar fuentes para mejorar rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="images/logo.svg" alt="Logo Raíces y Letras" class="logo">
+        <h1>Raíces y Letras</h1>
+      </div>
+      <button id="theme-toggle" aria-label="Cambiar tema claro/oscuro">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
+          <li><a href="mitos.html">Mitos</a></li>
+          <li><a href="leyendas.html">Leyendas</a></li>
+          <li><a href="#regiones">Regiones</a></li>
+          <li><a href="#acerca-de">Acerca de</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h2>Descubre la Magia de Colombia</h2>
+        <p>Explora los mitos y leyendas que han dado forma a la identidad cultural colombiana durante generaciones</p>
+        <div class="hero-buttons">
+          <a href="mitos.html" class="btn-primary">Explorar Mitos</a>
+          <a href="leyendas.html" class="btn-secondary">Descubrir Leyendas</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-illustration.svg" alt="Ilustración de personajes míticos colombianos" loading="lazy">
+      </div>
+    </section>
+
+    <section id="destacados" class="featured-section">
+      <div class="container">
+        <h2 class="section-title">Destacados</h2>
+        <div class="featured-carousel" aria-label="Carrusel de historias destacadas">
+          <button class="carousel-btn prev" aria-label="Anterior">❮</button>
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <!-- Tarjetas de historias destacadas -->
+              <article class="featured-card">
+                <div class="card-image">
+                  <img src="images/el-moan.jpg" alt="El Moán" loading="lazy">
+                  <span class="region-tag">Región Andina</span>
+                </div>
+                <div class="card-content">
+                  <h3>El Moán</h3>
+                  <p>Guardián de los ríos que castiga a los pescadores codiciosos y protege los ecosistemas acuáticos.</p>
+                  <a href="pages/moan.html" class="btn-read">Leer historia</a>
+                </div>
+              </article>
+              
+              <article class="featured-card">
+                <div class="card-image">
+                  <img src="images/la-patasola.jpg" alt="La Patasola" loading="lazy">
+                  <span class="region-tag">Región Andina</span>
+                </div>
+                <div class="card-content">
+                  <h3>La Patasola</h3>
+                  <p>Espíritu vengativo de los bosques que atrae a los hombres infieles para castigarlos.</p>
+                  <a href="pages/patasola.html" class="btn-read">Leer historia</a>
+                </div>
+              </article>
+              
+              <article class="featured-card">
+                <div class="card-image">
+                  <img src="images/hombre-caiman.jpg" alt="El Hombre Caimán" loading="lazy">
+                  <span class="region-tag">Región Caribe</span>
+                </div>
+                <div class="card-content">
+                  <h3>El Hombre Caimán</h3>
+                  <p>Mitad hombre, mitad caimán, transformado por su obsesión de espiar a las mujeres que se bañaban en el río.</p>
+                  <a href="pages/hombre-caiman.html" class="btn-read">Leer historia</a>
+                </div>
+              </article>
+              
+              <article class="featured-card">
+                <div class="card-image">
+                  <img src="images/madremonte.jpg" alt="La Madremonte" loading="lazy">
+                  <span class="region-tag">Región Pacífica</span>
+                </div>
+                <div class="card-content">
+                  <h3>La Madremonte</h3>
+                  <p>Guardiana de los bosques y selvas que castiga a quienes dañan la naturaleza.</p>
+                  <a href="pages/madremonte.html" class="btn-read">Leer historia</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="carousel-btn next" aria-label="Siguiente">❯</button>
+        </div>
+        <div class="carousel-indicators"></div>
+      </div>
+    </section>
+
+    <section id="regiones" class="regions-section">
+      <div class="container">
+        <h2 class="section-title">Explora por Regiones</h2>
+        <div class="regions-grid">
+          <a href="regiones/andina.html" class="region-card" style="background-image: url('images/region-andina.jpg');">
+            <div class="region-overlay">
+              <h3>Región Andina</h3>
+              <p>12 historias</p>
+            </div>
+          </a>
+          <a href="regiones/caribe.html" class="region-card" style="background-image: url('images/region-caribe.jpg');">
+            <div class="region-overlay">
+              <h3>Región Caribe</h3>
+              <p>8 historias</p>
+            </div>
+          </a>
+          <a href="regiones/pacifica.html" class="region-card" style="background-image: url('images/region-pacifica.jpg');">
+            <div class="region-overlay">
+              <h3>Región Pacífica</h3>
+              <p>7 historias</p>
+            </div>
+          </a>
+          <a href="regiones/amazonia.html" class="region-card" style="background-image: url('images/region-amazonia.jpg');">
+            <div class="region-overlay">
+              <h3>Amazonía</h3>
+              <p>9 historias</p>
+            </div>
+          </a>
+          <a href="regiones/orinoquia.html" class="region-card" style="background-image: url('images/region-orinoquia.jpg');">
+            <div class="region-overlay">
+              <h3>Orinoquía</h3>
+              <p>6 historias</p>
+            </div>
+          </a>
+          <a href="regiones/insular.html" class="region-card" style="background-image: url('images/region-insular.jpg');">
+            <div class="region-overlay">
+              <h3>Región Insular</h3>
+              <p>4 historias</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="acerca-de" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">Acerca de Raíces y Letras</h2>
+            <p>Somos un proyecto dedicado a preservar y difundir el rico patrimonio cultural de Colombia a través de sus mitos y leyendas. Nuestra misión es mantener viva la tradición oral que ha pasado de generación en generación.</p>
+            <p>Cada historia que compartimos ha sido cuidadosamente investigada y documentada para ofrecer una experiencia auténtica y educativa, conectando a las nuevas generaciones con sus raíces culturales.</p>
+            <a href="about.html" class="btn-secondary">Conocer más</a>
+          </div>
+          <div class="about-image">
+            <img src="images/about-illustration.svg" alt="Ilustración de narrador de historias" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="podcast" class="podcast-section">
+      <div class="container">
+        <h2 class="section-title">Nuestro Podcast</h2>
+        <div class="podcast-container">
+          <div class="podcast-info">
+            <h3>Voces Ancestrales</h3>
+            <p>Escucha nuestras historias narradas por expertos en tradición oral colombiana. Nuevos episodios cada semana.</p>
+            <div class="podcast-platforms">
+              <a href="https://spotify.com" target="_blank" rel="noopener" class="platform-link">
+                <img src="images/spotify-icon.svg" alt="Spotify" loading="lazy">
+                <span>Spotify</span>
+              </a>
+              <a href="https://apple.com/apple-podcasts" target="_blank" rel="noopener" class="platform-link">
+                <img src="images/apple-podcasts-icon.svg" alt="Apple Podcasts" loading="lazy">
+                <span>Apple Podcasts</span>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="platform-link">
+                <img src="images/youtube-icon.svg" alt="YouTube" loading="lazy">
+                <span>YouTube</span>
+              </a>
+            </div>
+          </div>
+          <div class="podcast-player">
+            <div class="player-container">
+              <div class="player-episode">
+                <img src="images/podcast-cover.jpg" alt="Portada del episodio" loading="lazy">
+                <div class="episode-info">
+                  <h4>El Misterio de La Llorona</h4>
+                  <p>Episodio 12 • 28 min</p>
+                </div>
+              </div>
+              <div class="player-controls">
+                <button class="control-btn" aria-label="Anterior">⏮</button>
+                <button class="control-btn play-btn" aria-label="Reproducir">▶</button>
+                <button class="control-btn" aria-label="Siguiente">⏭</button>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 35%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>¿Tienes una historia que compartir?</h3>
+            <p>Nos encantaría conocer las historias que has escuchado en tu región. Compártelas con nosotros y ayúdanos a preservar este valioso patrimonio cultural.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <img src="images/email-icon.svg" alt="Email" loading="lazy">
+                <a href="mailto:contacto@raicesyletras.co">contacto@raicesyletras.co</a>
+              </div>
+              <div class="contact-item">
+                <img src="images/phone-icon.svg" alt="Teléfono" loading="lazy">
+                <a href="tel:+573001234567">+57 300 123 4567</a>
+              </div>
+              <div class="contact-item">
+                <img src="images/location-icon.svg" alt="Ubicación" loading="lazy">
+                <address>Bogotá, Colombia</address>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/facebook-icon.svg" alt="Facebook" loading="lazy">
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="images/instagram-icon.svg" alt="Instagram" loading="lazy">
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                <img src="images/twitter-icon.svg" alt="Twitter" loading="lazy">
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                <img src="images/youtube-icon.svg" alt="YouTube" loading="lazy">
+              </a>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="region">Región</label>
+              <select id="region" name="region">
+                <option value="">Selecciona una región</option>
+                <option value="andina">Región Andina</option>
+                <option value="caribe">Región Caribe</option>
+                <option value="pacifica">Región Pacífica</option>
+                <option value="amazonia">Amazonía</option>
+                <option value="orinoquia">Orinoquía</option>
+                <option value="insular">Región Insular</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tu historia</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <label class="checkbox-container">
+                <input type="checkbox" name="subscribe" id="subscribe">
+                <span class="checkmark"></span>
+                Suscribirme al boletín mensual
+              </label>
+            </div>
+            <button type="submit" class="btn-primary">Enviar historia</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h2>Suscríbete a nuestro boletín</h2>
+            <p>Recibe mensualmente nuevas historias, podcasts y eventos relacionados con la tradición oral colombiana.</p>
+          </div>
+          <form id="newsletter-form" class="newsletter-form" action="#" method="POST">
+            <div class="form-group">
+              <input type="email" id="newsletter-email" name="email" placeholder="Tu correo electrónico" required>
+              <button type="submit" class="btn-primary">Suscribirse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="images/logo-white.svg" alt="Logo Raíces y Letras" loading="lazy">
+          <h2>Raíces y Letras</h2>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <h3>Explorar</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="mitos.html">Mitos</a></li>
+              <li><a href="leyendas.html">Leyendas</a></li>
+              <li><a href="#regiones">Regiones</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h3>Recursos</h3>
+            <ul>
+              <li><a href="podcast.html">Podcast</a></li>
+              <li><a href="biblioteca.html">Biblioteca</a></li>
+              <li><a href="glosario.html">Glosario</a></li>
+              <li><a href="mapa.html">Mapa interactivo</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h3>Nosotros</h3>
+            <ul>
+              <li><a href="about.html">Acerca de</a></li>
+              <li><a href="equipo.html">Equipo</a></li>
+              <li><a href="colabora.html">Colabora</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Raíces y Letras - Todos los derechos reservados</p>
+        <div class="footer-links">
+          <a href="privacidad.html">Política de privacidad</a>
+          <a href="terminos.html">Términos de uso</a>
+          <a href="cookies.html">Política de cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detalle completo de la historia en Raíces y Letras, explorando su origen, variantes y significado cultural">
+  <meta name="keywords" content="mitos colombianos, leyendas colombianas, tradición oral, cultura colombiana">
+  <title>Título de la Historia | Raíces y Letras</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Precargar fuentes para mejorar rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="images/logo.svg" alt="Logo Raíces y Letras" class="logo">
+        <h1>Raíces y Letras</h1>
+      </div>
+      <button id="theme-toggle" aria-label="Cambiar tema claro/oscuro">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="mitos.html">Mitos</a></li>
+          <li><a href="leyendas.html">Leyendas</a></li>
+          <li><a href="index.html#regiones">Regiones</a></li>
+          <li><a href="index.html#acerca-de">Acerca de</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <button id="back-button" class="back-button" onclick="window.history.back()" aria-label="Volver atrás">
+      <span class="back-icon">←</span> Volver
+    </button>
+
+    <article class="story-container">
+      <div class="container">
+        <div class="story-header">
+          <div class="story-meta">
+            <span class="region-tag">Región Andina</span>
+            <span class="story-type">Leyenda</span>
+          </div>
+          <h2 class="story-title">Título de la Historia</h2>
+          <div class="story-info">
+            <div class="story-origin">
+              <span class="info-label">Origen:</span>
+              <span class="info-value">Siglo XVIII</span>
+            </div>
+            <div class="story-location">
+              <span class="info-label">Ubicación:</span>
+              <span class="info-value">Departamentos de Antioquia, Caldas y Risaralda</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-content">
+          <div class="story-image-container">
+            <img src="images/portada.jpg" alt="Ilustración de la historia" class="story-image" loading="lazy">
+            <div class="story-actions">
+              <button class="btn-action btn-download" data-file="files/historia.pdf">📄 Descargar PDF</button>
+              <button class="btn-action btn-podcast" data-podcast="historia">🎧 Escuchar</button>
+              <button class="btn-action btn-share" data-share="historia">🔗 Compartir</button>
+            </div>
+          </div>
+
+          <div class="story-text">
+            <section class="story-section">
+              <h3>Introducción</h3>
+              <p>Esta es la introducción de la historia. Aquí se presenta el contexto y la relevancia de la narrativa, situando al lector en el ambiente de la tradición oral. Se explica brevemente el origen de la historia y su importancia en la cultura colombiana.</p>
+            </section>
+
+            <section class="story-section">
+              <h3>Historia Completa</h3>
+              <p>Este es el cuerpo completo de la historia. Aquí se detalla cada parte del relato, con descripciones vívidas, diálogos y referencias culturales que enriquecen la narrativa. La historia se desarrolla de manera cronológica, permitiendo al lector sumergirse en el mundo mágico de la tradición oral colombiana.</p>
+              <p>Los personajes cobran vida a través de descripciones detalladas de sus características físicas y psicológicas. Los escenarios se presentan con gran detalle, transportando al lector a los paisajes colombianos donde se desarrolla la acción.</p>
+              <p>El conflicto central de la historia se desarrolla gradualmente, manteniendo el interés del lector hasta llegar al clímax. La resolución ofrece una enseñanza o moraleja, característica común en los mitos y leyendas tradicionales.</p>
+            </section>
+
+            <section class="story-section">
+              <h3>Variantes Regionales</h3>
+              <p>En esta sección se exploran las diferentes versiones de la historia según la región. Cada comunidad ha adaptado el relato a su contexto cultural y geográfico, añadiendo elementos únicos que reflejan sus propias tradiciones y creencias.</p>
+              <ul class="variants-list">
+                <li><strong>Variante Antioqueña:</strong> Descripción de cómo se cuenta la historia en Antioquia.</li>
+                <li><strong>Variante Caldense:</strong> Elementos únicos de la versión en Caldas.</li>
+                <li><strong>Variante Risaraldense:</strong> Características distintivas en Risaralda.</li>
+              </ul>
+            </section>
+
+            <section class="story-section">
+              <h3>Significado Cultural</h3>
+              <p>Análisis del significado profundo de la historia en el contexto cultural colombiano. Se exploran los valores, creencias y enseñanzas que transmite el relato, así como su función social en las comunidades donde se ha preservado.</p>
+              <p>También se discute cómo la historia ha evolucionado con el tiempo y cómo sigue siendo relevante en la Colombia contemporánea, adaptándose a nuevos contextos y audiencias.</p>
+            </section>
+
+            <section class="story-section">
+              <h3>Representaciones Artísticas</h3>
+              <p>Exploración de cómo esta historia ha sido representada en diferentes expresiones artísticas: literatura, pintura, música, teatro y cine. Se destacan obras específicas inspiradas en el relato y cómo han contribuido a su preservación y difusión.</p>
+              <div class="art-gallery">
+                <figure class="art-item">
+                  <img src="images/arte1.jpg" alt="Representación artística 1" loading="lazy">
+                  <figcaption>"Título de la obra" por Artista (Año)</figcaption>
+                </figure>
+                <figure class="art-item">
+                  <img src="images/arte2.jpg" alt="Representación artística 2" loading="lazy">
+                  <figcaption>"Título de la obra" por Artista (Año)</figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="story-footer">
+          <div class="sources">
+            <h3>Fuentes y Referencias</h3>
+            <ul class="sources-list">
+              <li>Apellido, N. (Año). <em>Título del libro</em>. Editorial.</li>
+              <li>Apellido, N. (Año). "Título del artículo". <em>Nombre de la revista</em>, Volumen(Número), páginas.</li>
+              <li>Entrevista  <em>Nombre de la revista</em>, Volumen(Número), páginas.</li>
+              <li>Entrevista con [Nombre del entrevistado], [Ocupación], realizada el [Fecha] en [Lugar].</li>
+            </ul>
+          </div>
+          
+          <div class="tags">
+            <h3>Etiquetas</h3>
+            <div class="tags-list">
+              <a href="#" class="tag">Región Andina</a>
+              <a href="#" class="tag">Leyenda</a>
+              <a href="#" class="tag">Tradición oral</a>
+              <a href="#" class="tag">Siglo XVIII</a>
+              <a href="#" class="tag">Folclor colombiano</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <section class="related-stories">
+      <div class="container">
+        <h2 class="section-title">Historias relacionadas</h2>
+        <div class="related-grid">
+          <article class="related-card">
+            <img src="images/related1.jpg" alt="Historia relacionada 1" loading="lazy">
+            <h3>Título de historia relacionada 1</h3>
+            <p>Breve descripción de la historia relacionada.</p>
+            <a href="#" class="btn-read">Leer más</a>
+          </article>
+          <article class="related-card">
+            <img src="images/related2.jpg" alt="Historia relacionada 2" loading="lazy">
+            <h3>Título de historia relacionada 2</h3>
+            <p>Breve descripción de la historia relacionada.</p>
+            <a href="#" class="btn-read">Leer más</a>
+          </article>
+          <article class="related-card">
+            <img src="images/related3.jpg" alt="Historia relacionada 3" loading="lazy">
+            <h3>Título de historia relacionada 3</h3>
+            <p>Breve descripción de la historia relacionada.</p>
+            <a href="#" class="btn-read">Leer más</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="comments-section">
+      <div class="container">
+        <h2 class="section-title">Comentarios</h2>
+        <div class="comments-container">
+          <div class="comments-list">
+            <article class="comment">
+              <div class="comment-header">
+                <img src="images/user1.jpg" alt="Avatar de usuario" class="user-avatar" loading="lazy">
+                <div class="comment-meta">
+                  <h3 class="user-name">Nombre del usuario</h3>
+                  <span class="comment-date">Hace 2 días</span>
+                </div>
+              </div>
+              <div class="comment-body">
+                <p>Texto del comentario del usuario. Opinión sobre la historia o aporte adicional.</p>
+              </div>
+              <div class="comment-actions">
+                <button class="comment-action" aria-label="Me gusta">👍 <span>5</span></button>
+                <button class="comment-action" aria-label="Responder">↩️ Responder</button>
+              </div>
+            </article>
+            
+            <article class="comment">
+              <div class="comment-header">
+                <img src="images/user2.jpg" alt="Avatar de usuario" class="user-avatar" loading="lazy">
+                <div class="comment-meta">
+                  <h3 class="user-name">Nombre del usuario</h3>
+                  <span class="comment-date">Hace 5 días</span>
+                </div>
+              </div>
+              <div class="comment-body">
+                <p>Texto del comentario del usuario. Opinión sobre la historia o aporte adicional.</p>
+              </div>
+              <div class="comment-actions">
+                <button class="comment-action" aria-label="Me gusta">👍 <span>3</span></button>
+                <button class="comment-action" aria-label="Responder">↩️ Responder</button>
+              </div>
+            </article>
+          </div>
+          
+          <form class="comment-form">
+            <h3>Deja tu comentario</h3>
+            <div class="form-group">
+              <label for="comment-name">Nombre</label>
+              <input type="text" id="comment-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="comment-email">Correo electrónico</label>
+              <input type="email" id="comment-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="comment-text">Comentario</label>
+              <textarea id="comment-text" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Publicar comentario</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="images/logo-white.svg" alt="Logo Raíces y Letras" loading="lazy">
+          <h2>Raíces y Letras</h2>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <h3>Explorar</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="mitos.html">Mitos</a></li>
+              <li><a href="leyendas.html">Leyendas</a></li>
+              <li><a href="index.html#regiones">Regiones</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h3>Recursos</h3>
+            <ul>
+              <li><a href="podcast.html">Podcast</a></li>
+              <li><a href="biblioteca.html">Biblioteca</a></li>
+              <li><a href="glosario.html">Glosario</a></li>
+              <li><a href="mapa.html">Mapa interactivo</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h3>Nosotros</h3>
+            <ul>
+              <li><a href="about.html">Acerca de</a></li>
+              <li><a href="equipo.html">Equipo</a></li>
+              <li><a href="colabora.html">Colabora</a></li>
+              <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Raíces y Letras - Todos los derechos reservados</p>
+        <div class="footer-links">
+          <a href="privacidad.html">Política de privacidad</a>
+          <a href="terminos.html">Términos de uso</a>
+          <a href="cookies.html">Política de cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="share-modal" class="modal-container" aria-hidden="true">
+    <div class="modal" role="dialog" aria-labelledby="share-modal-title">
+      <div class="modal-header">
+        <h3 id="share-modal-title">Compartir historia</h3>
+        <button class="modal-close" aria-label="Cerrar">&times;</button>
+      </div>
+      <div class="modal-content">
+        <p>Comparte esta historia en tus redes sociales:</p>
+        <div class="share-buttons">
+          <a href="#" class="share-btn facebook" aria-label="Compartir en Facebook">Facebook</a>
+          <a href="#" class="share-btn twitter" aria-label="Compartir en Twitter">Twitter</a>
+          <a href="#" class="share-btn whatsapp" aria-label="Compartir en WhatsApp">WhatsApp</a>
+          <a href="#" class="share-btn telegram" aria-label="Compartir en Telegram">Telegram</a>
+        </div>
+        <div class="share-link">
+          <label for="share-url">Enlace directo:</label>
+          <input type="text" id="share-url" value="https://raicesyletras.co/historia" readonly>
+          <button id="copy-link" class="btn-secondary">Copiar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

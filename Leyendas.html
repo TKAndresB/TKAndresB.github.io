@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora las leyendas colombianas: historias transmitidas de generación en generación que forman parte del patrimonio cultural">
+  <meta name="keywords" content="leyendas colombianas, La Patasola, La Madremonte, tradición oral, cultura colombiana">
+  <title>Leyendas Colombianas | Raíces y Letras</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Precargar fuentes para mejorar rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="images/logo.svg" alt="Logo Raíces y Letras" class="logo">
+        <h1>Raíces y Letras</h1>
+      </div>
+      <button id="theme-toggle" aria-label="Cambiar tema claro/oscuro">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="mitos.html">Mitos</a></li>
+          <li><a href="leyendas.html" class="active" aria-current="page">Leyendas</a></li>
+          <li><a href="index.html#regiones">Regiones</a></li>
+          <li><a href="index.html#acerca-de">Acerca de</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h2>Leyendas Colombianas</h2>
+        <p>Historias transmitidas de generación en generación que forman parte de nuestro patrimonio cultural</p>
+      </div>
+    </section>
+
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-container">
+          <div class="search-box">
+            <input type="text" id="search-leyendas" placeholder="Buscar leyendas..." aria-label="Buscar leyendas">
+            <button id="search-btn" aria-label="Buscar">🔍</button>
+          </div>
+          <div class="filter-options">
+            <div class="filter-group">
+              <label for="region-filter">Filtrar por región:</label>
+              <select id="region-filter" aria-label="Filtrar por región">
+                <option value="all">Todas las regiones</option>
+                <option value="andina">Región Andina</option>
+                <option value="caribe">Región Caribe</option>
+                <option value="pacifica">Región Pacífica</option>
+                <option value="amazonia">Amazonía</option>
+                <option value="orinoquia">Orinoquía</option>
+                <option value="insular">Región Insular</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="sort-filter">Ordenar por:</label>
+              <select id="sort-filter" aria-label="Ordenar por">
+                <option value="alfabetico">Alfabético (A-Z)</option>
+                <option value="alfabetico-desc">Alfabético (Z-A)</option>
+                <option value="popularidad">Popularidad</option>
+                <option value="reciente">Más reciente</option>
+              </select>
+            </div>
+          </div>
+          <button id="filter-toggle" class="filter-toggle" aria-expanded="false" aria-controls="filter-options">
+            Filtros <span class="filter-icon">⚙️</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="leyendas-list" class="content-section">
+      <div class="container">
+        <div class="results-info">
+          <p id="results-count"><span>10</span> leyendas encontradas</p>
+        </div>
+        <div class="leyendas-grid">
+          <!-- Leyenda 1 -->
+          <article class="leyenda-card" data-region="andina" data-popularity="10">
+            <div class="card-image">
+              <img src="images/patasola.jpg" alt="La Patasola" loading="lazy">
+              <span class="region-tag">Región Andina</span>
+            </div>
+            <div class="card-content">
+              <h3>La Patasola</h3>
+              <p>Un espíritu aterrador que habita en los bosques y montañas, castigando a los hombres infieles y protegiendo a las mujeres.</p>
+              <div class="card-actions">
+                <a href="pages/patasola.html" class="btn-action btn-read">📖 Leer más</a>
+                <button class="btn-action btn-download" data-file="files/patasola.pdf">📄 Descargar PDF</button>
+                <button class="btn-action btn-podcast" data-podcast="patasola">🎧 Escuchar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Leyenda 2 -->
+          <article class="leyenda-card" data-region="caribe" data-popularity="9">
+            <div class="card-image">
+              <img src="images/madremonte.jpg" alt="La Madremonte" loading="lazy">
+              <span class="region-tag">Región Caribe</span>
+            </div>
+            <div class="card-content">
+              <h3>La Madremonte</h3>
+              <p>Una guardiana de la naturaleza que castiga a los invasores de su bosque y a quienes dañan el medio ambiente.</p>
+              <div class="card-actions">
+                <a href="pages/madremonte.html" class="btn-action btn-read">📖 Leer más</a>
+                <button class="btn-action btn-download" data-file="files/madremonte.pdf">📄 Descargar PDF</button>
+                <button class="btn-action btn-podcast" data-podcast="madremonte">🎧 Escuchar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Leyenda 3 -->
+          <article class="leyenda-card" data-region="pacifica" data-popularity="8">
+            <div class="card-image">
+              <img src="images/llorona.jpg" alt="La Llorona" loading="lazy">
+              <span class="region-tag">Región Pacífica</span>
+            </div>
+            <div class="card-content">
+              <h3>La Llorona</h3>
+              <p>El alma en pena de una mujer que ahogó a sus hijos y ahora vaga por ríos y quebradas lamentando su pérdida.</p>
+              <div class="card-actions">
+                <a href="pages/llorona.html" class="btn-action btn-read">📖 Leer más</a>
+                <button class="btn-action btn-download" data-file="files/llorona.pdf">📄 Descargar PDF</button>
+                <button class="btn-action btn-podcast" data-podcast="llorona">🎧 Escuchar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Leyenda 4 -->
+          <article class="leyenda-card" data-region="amazonia" data-popularity="7">
+            <div class="card-image">
+              <img src="images/poira.jpg" alt="La Poira" loading="lazy">
+              <span class="region-tag">Amazonía</span>
+            </div>
+            <div class="card-content">
+              <h3>La Poira</h3>
+              <p>Hermosa mujer que seduce a los hombres para llevarlos a las profundidades de los ríos y nunca más regresar.</p>
+              <div class="card-actions">
+                <a href="pages/poira.html" class="btn-action btn-read">📖 Leer más</a>
+                <button class="btn-action btn-download" data-file="files/poira.pdf">📄 Descargar PDF</button>
+                <button class="btn-action btn-podcast" data-podcast="poira">🎧 Escuchar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Leyenda 5 -->
+          <article class="leyenda-card" data-region="orinoquia" data-popularity="6">
+            <div class="card-image">
+              <img src="images/silbon.jpg" alt="El Silbón" loading="lazy">
+              <span class="region-tag">Orinoquía</span>
+            </div>
+            <div class="card-content">
+              <h3>El Silbón</h3>
+              <p>Espectro de un joven condenado a vagar eternamente por haber asesinado a su padre, anunciando su presencia con un escalofriante silbido.</p>
+              <div class="card-actions">
+                <a href="pages/silbon.html" class="btn-action btn-read">📖 Leer más</a>
+                <button class="btn-action btn-download" data-file="files/silbon.pdf">📄 Descargar PDF</button>
+                <button class="btn-action btn-podcast" data-podcast="silbon">🎧 Escuchar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Leyenda 6 -->
+          <article class="leyenda-card" data-region="insular" data-popularity="5">
+            <div class="card-image">
+              <img src="images/candileja.jpg" alt="La Candileja" loading="lazy">
+              <span class="region-tag">Región Insular</span>
+            </div>
+            <div class="card-content">
+              <h3>La Candileja</h3>
+              <p>Tres bolas de fuego que representan a una abuela y sus dos nietos, castigados por su mal comportamiento en vida.</p>
+              <div class="card-actions">
+                <a href="pages/candileja.html" class="btn-action btn-read">📖 Leer más</a>
+                <button class="btn-action btn-download" data-file="files/candileja.pdf">📄 Descargar PDF</button>
+                <button class="btn-action btn-podcast" data-podcast="candileja">🎧 Escuchar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="pagination">
+          <button class="pagination-btn" aria-label="Página anterior" disabled>❮</button>
+          <div class="page-numbers">
+            <button class="page-number active" aria-current="page">1</button>
+            <button class="page-number">2</button>
+          </div>
+          <button class="pagination-btn" aria-label="Página siguiente">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-container">
+          <div class="cta-content">
+            <h2>¿Conoces alguna leyenda que no esté en nuestra colección?</h2>
+            <p>Ayúdanos a preservar la tradición oral colombiana compartiendo tus historias con nosotros.</p>
+            <a href="index.html#contacto" class="btn-primary">Compartir mi historia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="images/logo-white.svg" alt="Logo Raíces y Letras" loading="lazy">
+          <h2>Raíces y Letras</h2>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <h3>Explorar</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="mitos.html">Mitos</a></li>
+              <li><a href="leyendas.html">Leyendas</a></li>
+              <li><a href="index.html#regiones">Regiones</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h3>Recursos</h3>
+            <ul>
+              <li><a href="podcast.html">Podcast</a></li>
+              <li><a href="biblioteca.html">Biblioteca</a></li>
+              <li><a href="glosario.html">Glosario</a></li>
+              <li><a href="mapa.html">Mapa interactivo</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h3>Nosotros</h3>
+            <ul>
+              <li><a href="about.html">Acerca de</a></li>
+              <li><a href="equipo.html">Equipo</a></li>
+              <li><a href="colabora.html">Colabora</a></li>
+              <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Raíces y Letras - Todos los derechos reservados</p>
+        <div class="footer-links">
+          <a href="privacidad.html">Política de privacidad</a>
+          <a href="terminos.html">Términos de uso</a>
+          <a href="cookies.html">Política de cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-container" class="modal-container" aria-hidden="true">
+    <div class="modal" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Título del modal</h3>
+        <button class="modal-close" aria-label="Cerrar">&times;</button>
+      </div>
+      <div class="modal-content">
+        <!-- El contenido del modal se llenará dinámicamente -->
+      </div>
+    </div>
+  </div>
+
+  <button id="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
